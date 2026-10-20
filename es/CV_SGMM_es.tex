@@ -1,0 +1,159 @@
+% CV en español: versión para Becas Leonardo BBVA 2026 (México).
+% Reglas de la convocatoria: máx. 5 páginas tamaño carta; abre con un resumen de trayectoria
+% de máx. 2,000 caracteres con espacios; énfasis en los últimos 5 años; ES o EN.
+% Estilo: el mismo de la memoria (EB Garamond, versalitas centradas, acento verde profundo).
+% La fuente en inglés es ../CV_SGMM.tex; mantener ambas sincronizadas.
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[cmintegrals,cmbraces]{newtxmath}\usepackage{ebgaramond}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-noindentfirst,es-nodecimaldot]{babel}
+\usepackage[letterpaper,margin=0.9in,headsep=0.3in]{geometry}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{eurosym}
+\usepackage[most]{tcolorbox}
+\usepackage{hyperref}
+\definecolor{Accent}{HTML}{1F4E3D}
+\hypersetup{colorlinks=true, urlcolor=Accent, linkcolor=Accent,
+            pdftitle={Currículum: Santiago G. Medina-Muñoz}, pdfauthor={Santiago G. Medina-Muñoz}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.25em}
+\setlist{nosep,leftmargin=1.1em,itemsep=2pt}
+\newcommand{\todo}[1]{\textcolor{red}{[TODO: #1]}}
+\newcommand{\yo}{\textbf{Medina-Muñoz S.G.}}
+
+\titleformat{\section}[block]{\normalfont\large\scshape\filcenter\color{Accent}}{}{0pt}{\textls[60]}
+\titleformat{\subsection}{\normalfont\normalsize\itshape\color{Accent}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{0.9em}{0.35em}
+\titlespacing*{\subsection}{0pt}{0.5em}{0.15em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[C]{\footnotesize\textls[80]{\scshape santiago g. medina-muñoz --- currículum}}
+\fancyfoot[C]{\footnotesize\thepage}
+
+% Entrada: título (negritas) y fecha a la derecha; segunda línea en itálica
+\newcommand{\entrada}[3]{\textbf{#1}\hfill{\small #3}\par{\itshape #2}\par}
+% Renglón de lista con fecha a la derecha
+\newcommand{\fila}[2]{\item #1\unskip\nobreak\hfill\penalty50\hskip1em\null\nobreak\hfill{\small #2}}
+\newcommand{\pub}[1]{\item #1}
+
+\newtcolorbox{resumen}{enhanced,breakable=false,colback=white,colframe=white,arc=0pt,
+  borderline north={0.4pt}{0pt}{Accent},borderline south={0.4pt}{0pt}{Accent},
+  left=4pt,right=4pt,top=4pt,bottom=4pt}
+
+\begin{document}
+\thispagestyle{empty}
+
+{\centering
+  {\LARGE\textls[60]{\scshape Santiago G. Medina-Muñoz}\par}
+  \vspace{0.3em}
+  {\itshape\color{Accent} Candidato a doctor en Biología Integrativa, Cinvestav --- defensa prevista en otoño de 2026\par}
+  \vspace{0.2em}
+  {\small santiago.medina@cinvestav.mx \;·\;
+   \href{https://santiago1234.github.io/santiagomedinamunoz/}{santiago1234.github.io/santiagomedinamunoz} \;·\;
+   \href{https://github.com/santiago1234}{github.com/santiago1234}\par
+   \href{https://orcid.org/0000-0001-8448-3561}{ORCID 0000-0001-8448-3561} \;·\;
+   \href{https://scholar.google.com/citations?user=XW3Sz1kAAAAJ&hl=es&oi=ao}{Google Scholar}\par}
+  \vspace{0.3em}{\color{Accent}\rule{0.25\linewidth}{0.4pt}}\par}
+
+\section*{Resumen de trayectoria}
+% Límite: 2,000 caracteres con espacios. Es el mismo texto que se pega en el portal.
+\begin{resumen}
+Soy genetista de poblaciones y biólogo computacional. Estudio cómo la historia demográfica de México (migraciones, mestizaje y deriva) moldeó la variación genética de sus poblaciones y qué significa esa variación para la salud. Me formé en la Licenciatura en Ciencias Agrogenómicas de la UNAM y trabajé tres años como bioinformático en el Stowers Institute for Medical Research (Kansas City, EE.\,UU.), donde publiqué como primer autor en \textit{Genome Biology} y como coprimer autor en \textit{Scientific Reports} sobre cómo la secuencia codificante regula la estabilidad del ARN mensajero. En 2020 regresé a México para hacer la maestría y el doctorado en el Cinvestav con el Dr. Andrés Moreno Estrada, en codirección con el Dr. Aaron Ragsdale (Universidad de Wisconsin-Madison). En estos cinco años desarrollé modelos demográficos de poblaciones latinoamericanas mestizas (primer autor, \textit{The American Journal of Human Genetics}, 2023), reconstruí la historia de los linajes indígenas de México con 500 genomas completos (manuscrito en revisión en \textit{Nature}) y participé en los análisis del Biobanco Mexicano (\textit{Nature}, 2023; \textit{Nature Medicine}, 2026). Mis artículos suman 832 citas (índice h de 8). He presentado mi trabajo en los congresos de la SMBE (2023 y 2024) y en el simposio EMBO|EMBL \textit{Reconstructing the Human Past} (Heidelberg, 2026), con becas de viaje de ambas organizaciones. Hoy amplío mi trabajo a la genómica de lecturas largas: ya ensamblé diez genomas piloto, la base del pangenoma latinoamericano que propongo para la Beca Leonardo. Quiero hacer ciencia de primer nivel desde México, con datos generados y analizados en el país.
+\end{resumen}
+
+{\centering\small\color{Accent}
+8 artículos arbitrados \;·\; 2 en \textit{Nature} y \textit{Nature Medicine} \;·\; 1 manuscrito en revisión en \textit{Nature} \;·\; 832 citas \;·\; índice h 8\par}
+{\centering\scriptsize\itshape (Google Scholar, octubre de 2026)\par}
+
+\section*{Formación académica}
+\entrada{Doctorado en Biología Integrativa}{Cinvestav, Langebio, Irapuato, México. Directores: Dr. Andrés Moreno Estrada y Dr. Aaron Ragsdale. Tesis: historia evolutiva del México precolombino}{2022--actual}
+{\small Candidato a doctor; defensa prevista en otoño de 2026.}\par\smallskip
+\entrada{Maestría en Biología Integrativa}{Cinvestav, Langebio, Irapuato, México. Director: Dr. Andrés Moreno Estrada. Tesis: inferencia demográfica en poblaciones mestizas}{2020--2022}
+\smallskip
+\entrada{Licenciatura en Ciencias Agrogenómicas}{Universidad Nacional Autónoma de México, ENES León, México}{2013--2017}
+
+\section*{Publicaciones}
+{\small Mi nombre en negritas; * contribución igual. Títulos en el idioma original.}
+
+\subsection*{En revisión y preprints}
+\begin{itemize}
+\pub{\yo, et al. The genomic history of pre-colonial contacts across the Americas. En revisión en \textit{Nature}. \emph{Capítulo central de mi tesis doctoral (500 genomas completos).}}
+\pub{Snodgrass S., Li F., Mambakkam S., \yo, \ldots, Ross-Ibarra J. Maize genetic diversity is largely unstructured by human ethnolinguistic diversity in its center of origin. \textit{bioRxiv}, 2026. \href{https://doi.org/10.1101/2026.02.02.703385}{doi:10.1101/2026.02.02.703385}}
+\end{itemize}
+
+\subsection*{Artículos arbitrados}
+\begin{enumerate}[label=\arabic*.,leftmargin=1.5em]
+\pub{Barberena-Jonas C., \yo, et al. Clinical genetic variation across Hispanic populations in the Mexican Biobank. \textit{Nature Medicine}, 32:725--735, 2026. \href{https://doi.org/10.1038/s41591-025-04100-z}{doi:10.1038/s41591-025-04100-z}}
+\pub{Sohail M., Palma-Martínez M.J., \ldots, \yo, et al. Mexican Biobank advances population and medical genomics of diverse ancestries. \textit{Nature}, 622(7984):775--783, 2023. \href{https://doi.org/10.1038/s41586-023-06560-0}{doi:10.1038/s41586-023-06560-0}}
+\pub{\yo, Ortega-Del Vecchyo D., Cruz-Hervert L.P., Ferreyra-Reyes L., García-García L., Moreno-Estrada A., Ragsdale A.P. Demographic modeling of admixed Latin American populations from whole genomes. \textit{The American Journal of Human Genetics}, 110(10):1804--1816, 2023. \href{https://doi.org/10.1016/j.ajhg.2023.08.015}{doi:10.1016/j.ajhg.2023.08.015} \emph{Primer autor; tesis de maestría.}}
+\pub{*Diez M., *\yo, Castellano L.A., et al. iCodon customizes gene expression based on the codon composition. \textit{Scientific Reports}, 12(1):12126, 2022. \href{https://doi.org/10.1038/s41598-022-15526-7}{doi:10.1038/s41598-022-15526-7} \emph{Coprimer autor.}}
+\pub{Rodríguez-Rodríguez J.E., Ioannidis A.G., \yo, Barberena-Jonas C., Blanco-Portillo J., Quinto-Cortés C.D., Moreno-Estrada A. The genetic legacy of the Manila galleon trade in Mexico. \textit{Philosophical Transactions of the Royal Society B}, 377(1852):20200419, 2022. \href{https://doi.org/10.1098/rstb.2020.0419}{doi:10.1098/rstb.2020.0419}}
+\pub{Jiménez-Kaufmann A., Chong A.Y., \ldots, \yo, et al. Imputation performance in Latin American populations: improving rare variant representation with the inclusion of Native American genomes. \textit{Frontiers in Genetics}, 12:719791, 2022. \href{https://doi.org/10.3389/fgene.2021.719791}{doi:10.3389/fgene.2021.719791}}
+\pub{\yo, Kushawah G., Castellano L.A., et al. Crosstalk between codon optimality and cis-regulatory elements dictates mRNA stability. \textit{Genome Biology}, 22:1--23, 2021. \href{https://doi.org/10.1186/s13059-020-02251-5}{doi:10.1186/s13059-020-02251-5} \emph{Primer autor.}}
+\pub{Wu Q., \yo, Kushawah G., et al. Translation affects mRNA stability in a codon-dependent manner in human cells. \textit{eLife}, 8:e45396, 2019. \href{https://doi.org/10.7554/eLife.45396}{doi:10.7554/eLife.45396}}
+\end{enumerate}
+
+\section*{Experiencia en investigación}
+\entrada{Doctorado y maestría: genómica de poblaciones y biología computacional}{Cinvestav, Langebio, Irapuato, México. Dr. Andrés Moreno Estrada y Dr. Aaron Ragsdale}{2020--actual}
+{\small Reconstruyo la historia demográfica de linajes indígenas y mestizos de México a partir de genomas completos, con métodos coalescentes y del espectro de frecuencias alélicas. Participo en los análisis del Biobanco Mexicano. Ensamblé diez genomas piloto con lecturas largas.}\par\smallskip
+\entrada{Estancia de investigación (Honorary Fellow)}{University of Wisconsin--Madison, EE.\,UU. Dr. Aaron Ragsdale}{verano de 2023}
+{\small Inferencia demográfica de poblaciones mexicanas con genomas completos, como parte del proyecto doctoral.}\par\smallskip
+\entrada{Bioinformático}{Stowers Institute for Medical Research, Kansas City, EE.\,UU. Dr. Ariel Bazzini}{2017--2020}
+{\small Cómo la información regulatoria de los genes está codificada en la secuencia codificante a través de la optimalidad de codones.}\par\smallskip
+\textbf{Antes de 2017:} tesis de licenciatura en el Stowers Institute (Dr. A. Bazzini, 2016--2017); Stowers Summer Scholar (Dra. J. Zeitlinger, 2015); estancia de verano en el Cinvestav, Langebio (Dra. C. Abreu-Goodgear, 2014).
+
+\section*{Becas, premios y financiamiento}
+\begin{itemize}
+\fila{Beca de viaje (1,000\,\euro), EMBO|EMBL Symposium \textit{Reconstructing the Human Past}, EMBL Heidelberg}{sept.\ 2026}
+\fila{EMBO|EMBL Symposia Fellowship: viaje y participación, \textit{Reconstructing the Human Past}}{oct.\ 2024}
+\fila{Tercer lugar, mejor presentación oral, 6.ª Reunión de Genómica de Poblaciones de México, Cuernavaca}{oct.\ 2023}
+\fila{Young Investigator Travel Award, SMBE, Ferrara, Italia}{jul.\ 2023}
+\fila{Beca Elisa Acuña: estancia en la University of Wisconsin--Madison}{abr.\ 2023}
+\fila{Beca de posgrado Conacyt (maestría y doctorado), Cinvestav}{2020}
+\fila{Stowers Summer Scholar, Stowers Institute; Excelencia Académica Colgate, ENES UNAM}{2015--2016}
+\end{itemize}
+
+\section*{Presentaciones}
+\subsection*{Pláticas}
+\begin{itemize}
+\fila{Genomic history of Mexico reveals bidirectional long-distance connectivity across the Americas. EMBO|EMBL Symposium \textit{Reconstructing the Human Past: Using Ancient and Modern Genomics}, EMBL Heidelberg, Alemania}{sept.\ 2026}
+\fila{Inferring fine-scale demography of Indigenous lineages from 500 whole genomes across Mexico. SMBE 2024, Puerto Vallarta, México}{jul.\ 2024}
+\fila{Demographic modeling of admixed Latin American populations from whole genomes. 6.ª Reunión de Genómica de Poblaciones de México, Cuernavaca}{oct.\ 2023}
+\fila{Demographic modeling of admixed Latin American populations from whole genomes. SMBE 2023, Ferrara, Italia}{jul.\ 2023}
+\end{itemize}
+\subsection*{Carteles}
+\begin{itemize}
+\fila{Inferring fine-scale demography of Indigenous lineages from 500 whole genomes across Mexico. \textit{Reconstructing the Human Past}, EMBL Heidelberg}{2024}
+\fila{Deciphering mRNA decay programs during embryogenesis. Biological Data Science, Cold Spring Harbor Laboratory}{2018}
+\fila{A pipeline for peak calling and motif discovery in ChIP-nexus data. XVI Congreso Nacional de Bioquímica y Biología Molecular de Plantas, Querétaro}{2016}
+\end{itemize}
+
+\section*{Formación de recursos humanos y servicio}
+\begin{itemize}
+\item Asesoría de investigación de un estudiante de maestría y uno de licenciatura, laboratorio del Dr. Moreno Estrada, Cinvestav.
+\item Revisor de artículos para \textit{Genome Biology and Evolution}.
+\end{itemize}
+
+\section*{Cursos y talleres}
+\begin{itemize}
+\fila{Genome bioinformatics: from short- to long-read sequencing. EMBL-EBI, Hinxton, Reino Unido}{nov.\ 2025}
+\fila{Population genomics: background and tools. EMBO (virtual)}{2022}
+\fila{NCBI Hackathon. Cold Spring Harbor Laboratory, Nueva York}{2018}
+\fila{Statistical Data Analysis for Genome Scale Biology. EMBO, Bressanone, Italia}{2017}
+\fila{Escuela de Verano de Bioinformática. Instituto de Matemáticas, UNAM, Querétaro}{2015}
+\end{itemize}
+
+\section*{Habilidades técnicas}
+\textbf{Genética de poblaciones:} inferencia demográfica (moments, msprime, ABC), simulación coalescente, modelado del espectro de frecuencias alélicas, inferencia de ancestría global y local.\par
+\textbf{Genómica y bioinformática:} ensamblaje de genomas con lecturas largas, llamado de variantes en genomas completos (GATK, bcftools), alineamiento de lecturas, análisis de RNA-seq y ChIP-nexus.\par
+\textbf{Programación:} Python, R, Bash, Snakemake, Git, cómputo de alto rendimiento (HPC/Slurm).
+
+\end{document}
